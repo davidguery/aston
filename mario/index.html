@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario</title>
+	<link rel="stylesheet" type="text/css" href="css/mario-translation.css">
+	<link rel="stylesheet" type="text/css" href="css/mario.css">
+	<link rel="stylesheet" type="text/css" href="css/background-translation.css">
+	<script type="text/javascript" src="../jquery/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/mario.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="stage">
+			<div id="mario_wrapper">
+				<div id="mario" class="mario_stand translation"></div>
+			</div>
+			<div id="floor"></div>
+		</div>
+	</div>
+
+	<audio controls autoplay class="display-none">
+		<source src="sounds/Super Mario Bros. Music - Main Theme - Overworld.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio controls preload="auto" class="display-none" id="jumpSound">
+		<source src="sounds/saut.wav" type="audio/wav">
+	</audio>
+</body>
+</html>

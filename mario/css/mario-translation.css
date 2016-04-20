@@ -1,0 +1,113 @@
+.translation {
+	position: absolute;
+
+	-o-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards; /* don't rewind */
+	
+	-o-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+.translation.forward {
+	-o-animation-name: translation-forward;
+	-ms-animation-name: translation-forward;
+	-moz-animation-name: translation-forward;
+	-webkit-animation-name: translation-forward;
+	animation-name: translation-forward;
+	
+	-o-animation-duration: 300s;
+	-ms-animation-duration: 300s;
+	-moz-animation-duration: 300s;
+	-webkit-animation-duration: 300s;
+	animation-duration: 300s;
+}
+
+.translation.backward {
+	-o-animation-name: translation-backward;
+	-ms-animation-name: translation-backward;
+	-moz-animation-name: translation-backward;
+	-webkit-animation-name: translation-backward;
+	animation-name: translation-backward;
+	
+	-o-animation-duration: 300s;
+	-ms-animation-duration: 300s;
+	-moz-animation-duration: 300s;
+	-webkit-animation-duration: 300s;
+	animation-duration: 300s;
+}
+
+/* ======== Animation key forward ======== */
+
+@-webkit-keyframes translation-forward {
+	to {
+		left: 10000%;
+	}
+}
+
+@-moz-keyframes translation-forward {
+	to {
+		left: 10000%;
+	}
+}
+
+@-ms-keyframes translation-forward {
+	to {
+		left: 10000%;
+	}
+}
+
+@-o-keyframes translation-forward {
+	to {
+		left: 10000%;
+	}
+}
+
+@keyframes translation-forward {
+	to {
+		left: 10000%;
+	}
+}
+
+/* ======== Animation key backward ======== */
+
+@-webkit-keyframes translation-backward {
+	to {
+		left: -10000%;
+	}
+}
+
+@-moz-keyframes translation-backward {
+	to {
+		left: -10000%;
+	}
+}
+
+@-ms-keyframes translation-backward {
+	to {
+		left: -10000%;
+	}
+}
+
+@-o-keyframes translation-backward {
+	to {
+		left: -10000%;
+	}
+}
+
+@keyframes translation-backward {
+	to {
+		left: -10000%;
+	}
+}

@@ -1,0 +1,50 @@
+#mario {
+	height: 55px;
+	width: 30px;
+	position: absolute;
+	display: inline-block;
+	left: 10px;
+	bottom: 0px;
+}
+
+.mario_stand {
+	background: url(../image/mario_stand.png) no-repeat center top;
+}
+
+.mario_run {
+	background: url(../image/mario_run.gif) no-repeat center top;
+}
+
+.reverse {
+	transform: scale(-1,1);
+}
+
+#mario_wrapper {
+	height: 300px;
+	width: 500px;
+	display: inline-block;
+	position: relative;
+	bottom: -5px;
+}
+
+#floor {
+	background: url(../image/floor.png);
+	height: 20px;
+}
+
+#stage {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background: url(../image/bg_desert.png) repeat 0 bottom;
+}
+
+#wrapper {
+	margin: auto;
+	width: 700px;
+}
+
+.display-none {
+	display: none;
+}
+

@@ -1,0 +1,63 @@
+/* ======== Animation forward ======== */
+
+.translate-bg-left{
+	-o-animation: translate-bg-left 90s linear infinite;
+	-ms-animation: translate-bg-left 90s linear infinite;
+	-moz-animation: translate-bg-left 90s linear infinite;
+	-webkit-animation: translate-bg-left 90s linear infinite;
+	animation: translate-bg-left 90s linear infinite;
+}
+
+/* ======== translate background to the left ======== */
+
+@-webkit-keyframes translate-bg-left {
+	to { background-position: 2000% bottom; }
+}
+
+@-moz-keyframes translate-bg-left {
+	to { background-position: 2000% bottom; }
+}
+
+@-ms-keyframes translate-bg-left {
+	to { background-position: 2000% bottom; }
+}
+
+@-o-keyframes translate-bg-left {
+	to { background-position: 2000% bottom; }
+}
+
+@keyframes translate-bg-left {
+	to { background-position: 2000% bottom; }
+}
+
+/* ======== Animation backward ======== */
+
+.translate-bg-right{
+	-o-animation: translate-bg-right 90s linear infinite;
+	-ms-animation: translate-bg-right 90s linear infinite;
+	-moz-animation: translate-bg-right 90s linear infinite;
+	-webkit-animation: translate-bg-right 90s linear infinite;
+	animation: translate-bg-right 90s linear infinite;
+}
+
+/* ======== translate background to the left ======== */
+
+@-webkit-keyframes translate-bg-right {
+	to { background-position: -2000% bottom; }
+}
+
+@-moz-keyframes translate-bg-right {
+	to { background-position: -2000% bottom; }
+}
+
+@-ms-keyframes translate-bg-right {
+	to { background-position: -2000% bottom; }
+}
+
+@-o-keyframes translate-bg-right {
+	to { background-position: -2000% bottom; }
+}
+
+@keyframes translate-bg-right {
+	to { background-position: -2000% bottom; }
+}

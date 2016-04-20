@@ -1,0 +1,11 @@
+.colored {
+	background-color: lightgrey;
+	color: black;
+	width: 200px;
+	display: block;
+}
+
+.colorChange {
+	background-color: grey;
+	color: white;
+}
