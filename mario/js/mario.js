@@ -1,3 +1,5 @@
+
+/*Make Mario move forward*/
 var moveForward = function() {
 	// $('#mario').removeClass('reverse')
 	// 	.animate({
@@ -10,6 +12,7 @@ var moveForward = function() {
 		.addClass('mario_run');
 };
 
+/*Make Mario move backward*/
 var moveBackward = function() {
 	// $('#mario').addClass('reverse')
 	// 	.animate({
@@ -22,6 +25,7 @@ var moveBackward = function() {
 		.addClass('mario_run');
 };
 
+/*Make mario jump!*/
 var jump = function() {
 	$('#mario').animate({
 		"bottom": "+=100px"
@@ -34,6 +38,7 @@ var jump = function() {
 	sound.play();
 };
 
+/*Stop Mario moving*/
 var stopMoving = function() {
 	var offset = $('#mario').offset();
 	var bgPositionStage = $('#stage').css('backgroundPosition');
@@ -51,6 +56,7 @@ var stopMoving = function() {
 		.css('backgroundPosition', bgPositionFloor);
 };
 
+/*Make backgroud move and mario stop*/
 var moveBackground = function() {
 	var offset = $('#mario').offset();
 	$('#mario').removeClass('mario_run')
@@ -66,9 +72,11 @@ var moveBackground = function() {
 
 $(function() {
 	var down = [];
+	/*Key binding for Mario's moves*/
 	$(document).keydown(function(e) {
 		var offset = $('#mario').offset();
 		switch (e.keyCode) {
+			/*Right*/
 			case 39:
 				if (offset.left >= $('#mario_wrapper').innerWidth()) {
 					moveBackground();
@@ -80,6 +88,7 @@ $(function() {
 				}
 				break;
 
+			/*Left*/
 			case 37:
 				if (offset.left <= $('#mario_wrapper').offset().left + 10) {
 					stopMoving();
@@ -91,6 +100,7 @@ $(function() {
 				}
 				break;
 
+			/*Up*/
 			case 38:
 				if (down[38] == null) {
 					jump();
@@ -103,6 +113,7 @@ $(function() {
 		}
 	});
 
+	/*Key binding for Mario to stop*/
 	$(document).keyup(function(e) {
 		if (e.keyCode == 39 || e.keyCode == 37) {
 			// $('#mario').stop()
